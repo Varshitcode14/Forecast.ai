@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar Styles */
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Chart Container Styles */
+[id$="Chart"] {
+    min-height: 300px;
+}
+
+/* Loading Indicator Styles */
+#loadingIndicator {
+    margin: 2rem 0;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+}
+
+.stats-card .card-subtitle {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    [id$="Chart"] {
+        min-height: 250px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Animation for loading */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

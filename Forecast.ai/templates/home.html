@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Forecast.vk - Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Forecast.vk</h1>
+    <p class="lead">Advanced Data Analytics and Visualization Platform</p>
+    <hr class="my-4">
+    <p>Upload your dataset and get instant insights with interactive visualizations.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('upload') }}" role="button">Get Started</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-chart-pie"></i> Visual Analytics
+                </h5>
+                <p class="card-text">Interactive charts and graphs for better understanding of your data.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-users"></i> Customer Insights
+                </h5>
+                <p class="card-text">Understand your customer segments and behavior patterns.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-shopping-cart"></i> Sales Analysis
+                </h5>
+                <p class="card-text">Track sales performance and identify growth opportunities.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
